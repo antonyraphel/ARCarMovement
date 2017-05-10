@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,19 @@
 		7BDA87961EBB564C0048CD44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDA87941EBB564C0048CD44 /* Main.storyboard */; };
 		7BDA87981EBB564C0048CD44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BDA87971EBB564C0048CD44 /* Assets.xcassets */; };
 		7BDA879B1EBB564C0048CD44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDA87991EBB564C0048CD44 /* LaunchScreen.storyboard */; };
+		7BDA87A81EBB57690048CD44 /* ARCarMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDA87A71EBB57690048CD44 /* ARCarMovement.m */; };
+		7BE0A88D1EBC419400C08FA5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A88C1EBC419400C08FA5 /* Accelerate.framework */; };
+		7BE0A88F1EBC419E00C08FA5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A88E1EBC419E00C08FA5 /* CoreData.framework */; };
+		7BE0A8911EBC41A900C08FA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A8901EBC41A900C08FA5 /* CoreGraphics.framework */; };
+		7BE0A8931EBC41B400C08FA5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A8921EBC41B400C08FA5 /* CoreLocation.framework */; };
+		7BE0A8951EBC41BC00C08FA5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A8941EBC41BC00C08FA5 /* CoreText.framework */; };
+		7BE0A8971EBC41C300C08FA5 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A8961EBC41C300C08FA5 /* GLKit.framework */; };
+		7BE0A8991EBC41CB00C08FA5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A8981EBC41CB00C08FA5 /* ImageIO.framework */; };
+		7BE0A89B1EBC41DC00C08FA5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A89A1EBC41DC00C08FA5 /* libc++.tbd */; };
+		7BE0A89D1EBC41E600C08FA5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A89C1EBC41E600C08FA5 /* libz.tbd */; };
+		7BE0A89F1EBC41F100C08FA5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A89E1EBC41F100C08FA5 /* OpenGLES.framework */; };
+		7BE0A8A11EBC41FB00C08FA5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A8A01EBC41FB00C08FA5 /* SystemConfiguration.framework */; };
+		7BE0A8A31EBC58C000C08FA5 /* coordinates.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0A8A21EBC58C000C08FA5 /* coordinates.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +39,21 @@
 		7BDA87971EBB564C0048CD44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BDA879A1EBB564C0048CD44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BDA879C1EBB564C0048CD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BDA87A31EBB567F0048CD44 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7BDA87A61EBB57690048CD44 /* ARCarMovement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCarMovement.h; sourceTree = "<group>"; };
+		7BDA87A71EBB57690048CD44 /* ARCarMovement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCarMovement.m; sourceTree = "<group>"; };
+		7BE0A88C1EBC419400C08FA5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7BE0A88E1EBC419E00C08FA5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7BE0A8901EBC41A900C08FA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7BE0A8921EBC41B400C08FA5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7BE0A8941EBC41BC00C08FA5 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		7BE0A8961EBC41C300C08FA5 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		7BE0A8981EBC41CB00C08FA5 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		7BE0A89A1EBC41DC00C08FA5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		7BE0A89C1EBC41E600C08FA5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7BE0A89E1EBC41F100C08FA5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7BE0A8A01EBC41FB00C08FA5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7BE0A8A21EBC58C000C08FA5 /* coordinates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coordinates.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +61,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE0A8A11EBC41FB00C08FA5 /* SystemConfiguration.framework in Frameworks */,
+				7BE0A89F1EBC41F100C08FA5 /* OpenGLES.framework in Frameworks */,
+				7BE0A89D1EBC41E600C08FA5 /* libz.tbd in Frameworks */,
+				7BE0A89B1EBC41DC00C08FA5 /* libc++.tbd in Frameworks */,
+				7BE0A8991EBC41CB00C08FA5 /* ImageIO.framework in Frameworks */,
+				7BE0A8971EBC41C300C08FA5 /* GLKit.framework in Frameworks */,
+				7BE0A8951EBC41BC00C08FA5 /* CoreText.framework in Frameworks */,
+				7BE0A8931EBC41B400C08FA5 /* CoreLocation.framework in Frameworks */,
+				7BE0A8911EBC41A900C08FA5 /* CoreGraphics.framework in Frameworks */,
+				7BE0A88F1EBC419E00C08FA5 /* CoreData.framework in Frameworks */,
+				7BE0A88D1EBC419400C08FA5 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +83,7 @@
 			children = (
 				7BDA878A1EBB564C0048CD44 /* ARCarMovement */,
 				7BDA87891EBB564C0048CD44 /* Products */,
+				7BDA87A21EBB567E0048CD44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +98,7 @@
 		7BDA878A1EBB564C0048CD44 /* ARCarMovement */ = {
 			isa = PBXGroup;
 			children = (
+				7BDA87A51EBB56E50048CD44 /* ARCarMovement */,
 				7BDA878E1EBB564C0048CD44 /* AppDelegate.h */,
 				7BDA878F1EBB564C0048CD44 /* AppDelegate.m */,
 				7BDA87911EBB564C0048CD44 /* ViewController.h */,
@@ -74,9 +115,38 @@
 		7BDA878B1EBB564C0048CD44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7BE0A8A21EBC58C000C08FA5 /* coordinates.json */,
 				7BDA878C1EBB564C0048CD44 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BDA87A21EBB567E0048CD44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BE0A8A01EBC41FB00C08FA5 /* SystemConfiguration.framework */,
+				7BE0A89E1EBC41F100C08FA5 /* OpenGLES.framework */,
+				7BE0A89C1EBC41E600C08FA5 /* libz.tbd */,
+				7BE0A89A1EBC41DC00C08FA5 /* libc++.tbd */,
+				7BE0A8981EBC41CB00C08FA5 /* ImageIO.framework */,
+				7BE0A8961EBC41C300C08FA5 /* GLKit.framework */,
+				7BE0A8941EBC41BC00C08FA5 /* CoreText.framework */,
+				7BE0A8921EBC41B400C08FA5 /* CoreLocation.framework */,
+				7BE0A8901EBC41A900C08FA5 /* CoreGraphics.framework */,
+				7BE0A88E1EBC419E00C08FA5 /* CoreData.framework */,
+				7BE0A88C1EBC419400C08FA5 /* Accelerate.framework */,
+				7BDA87A31EBB567F0048CD44 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BDA87A51EBB56E50048CD44 /* ARCarMovement */ = {
+			isa = PBXGroup;
+			children = (
+				7BDA87A61EBB57690048CD44 /* ARCarMovement.h */,
+				7BDA87A71EBB57690048CD44 /* ARCarMovement.m */,
+			);
+			path = ARCarMovement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,16 +176,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Active Mac05";
+				ORGANIZATIONNAME = "Antony Raphel";
 				TargetAttributes = {
 					7BDA87871EBB564C0048CD44 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
 			buildConfigurationList = 7BDA87831EBB564C0048CD44 /* Build configuration list for PBXProject "ARCarMovement" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -137,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE0A8A31EBC58C000C08FA5 /* coordinates.json in Resources */,
 				7BDA879B1EBB564C0048CD44 /* LaunchScreen.storyboard in Resources */,
 				7BDA87981EBB564C0048CD44 /* Assets.xcassets in Resources */,
 				7BDA87961EBB564C0048CD44 /* Main.storyboard in Resources */,
@@ -152,6 +223,7 @@
 			files = (
 				7BDA87931EBB564C0048CD44 /* ViewController.m in Sources */,
 				7BDA87901EBB564C0048CD44 /* AppDelegate.m in Sources */,
+				7BDA87A81EBB57690048CD44 /* ARCarMovement.m in Sources */,
 				7BDA878D1EBB564C0048CD44 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -259,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -270,9 +342,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ARCarMovement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Techactive.ARCarMovement;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonyraphel.ARCarMovement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -281,9 +356,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ARCarMovement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Techactive.ARCarMovement;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antonyraphel.ARCarMovement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -307,6 +385,7 @@
 				7BDA87A11EBB564C0048CD44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

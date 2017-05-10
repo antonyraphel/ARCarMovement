@@ -2,11 +2,12 @@
 //  AppDelegate.h
 //  ARCarMovement
 //
-//  Created by Active Mac05 on 04/05/17.
-//  Copyright © 2017 Active Mac05. All rights reserved.
+//  Created by Mac05 on 04/05/17.
+//  Copyright © 2017 Antony Raphel. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -14,4 +15,5 @@
 
 
 @end
+
 

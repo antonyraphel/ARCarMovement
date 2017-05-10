@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  ARCarMovement
 //
-//  Created by Active Mac05 on 04/05/17.
-//  Copyright © 2017 Active Mac05. All rights reserved.
+//  Created by Mac05 on 04/05/17.
+//  Copyright © 2017 Antony Raphel. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    //replacing YOUR_API_KEY with your API key:
+    //
+    [GMSServices provideAPIKey:@"YOUR_API_KEY"];
+    
     return YES;
 }
 
