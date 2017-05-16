@@ -77,7 +77,7 @@
          *  to turn properly. Here coordinates json files is used without new bearing value. So that
          *  bearing won't work as expected.
          */
-        [self.moveMent ARCarMovement:driverMarker withOldCoordinate:self.oldCoordinate andNewCoordinate:newCoordinate inMapview:self.mapView withBearing:0];
+        [self.moveMent ARCarMovement:driverMarker withOldCoordinate:self.oldCoordinate andNewCoordinate:newCoordinate inMapview:self.mapView withBearing:0]; //instead value 0, pass latest bearing value from backend
         
         self.oldCoordinate = newCoordinate;
         self.counter = self.counter + 1; //increase the value to get all index position from array
