@@ -2,6 +2,9 @@
 
 This is navigation example on google map. Here Marker move as vehicles moves with turns as uber does in their app. Using old and new coordinates animating bearing value the markers are moving.
 
+
+![ARCarMovement Screenshot](https://raw.githubusercontent.com/antonyraphel/ARCarMovement/30b4fa26fc4f14abaef5da147544db8d558b1c18/screenshot/image-1.png) {:height="30%" width="30%"}
+
 ## Getting Started
 
 For running this demo project, you need to add latest Google Maps SDK with Key. You can download the Google Maps SDK and just drag and drop into this project.
