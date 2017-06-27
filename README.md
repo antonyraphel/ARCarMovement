@@ -51,7 +51,7 @@ The required datasource method is
 
 ```
 
-The required datasource method is
+The required delegate method is
 
 ```
 /**
