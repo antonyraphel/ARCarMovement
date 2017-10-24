@@ -8,15 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <GoogleMaps/GoogleMaps.h>
-#import "ARCarMovement.h"
+#import "ARCarMovement-Swift.h"
 
-
-@interface ViewController : UIViewController <GMSMapViewDelegate, ARCarMovementDelegate> {
+@interface ViewController : UIViewController <GMSMapViewDelegate> {
     GMSMarker *driverMarker;
 }
 @property (strong, nonatomic) NSMutableArray *CoordinateArr;
 @property (strong, nonatomic) GMSMapView *mapView;
-@property (strong, nonatomic) ARCarMovement *moveMent;
 @property CLLocationCoordinate2D oldCoordinate;
 @property (weak, nonatomic) NSTimer *timer;
 @property NSInteger counter;

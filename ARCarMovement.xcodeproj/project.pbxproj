@@ -13,7 +13,6 @@
 		7BDA87961EBB564C0048CD44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDA87941EBB564C0048CD44 /* Main.storyboard */; };
 		7BDA87981EBB564C0048CD44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BDA87971EBB564C0048CD44 /* Assets.xcassets */; };
 		7BDA879B1EBB564C0048CD44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDA87991EBB564C0048CD44 /* LaunchScreen.storyboard */; };
-		7BDA87A81EBB57690048CD44 /* ARCarMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDA87A71EBB57690048CD44 /* ARCarMovement.m */; };
 		7BE0A88D1EBC419400C08FA5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A88C1EBC419400C08FA5 /* Accelerate.framework */; };
 		7BE0A88F1EBC419E00C08FA5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A88E1EBC419E00C08FA5 /* CoreData.framework */; };
 		7BE0A8911EBC41A900C08FA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A8901EBC41A900C08FA5 /* CoreGraphics.framework */; };
@@ -29,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B4897361F9F3A8800227B1D /* ARCarMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCarMovement.swift; sourceTree = "<group>"; };
+		7B4897371F9F3AB400227B1D /* ARCarMovement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARCarMovement-Bridging-Header.h"; sourceTree = "<group>"; };
 		7BDA87881EBB564C0048CD44 /* ARCarMovement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCarMovement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BDA878C1EBB564C0048CD44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BDA878E1EBB564C0048CD44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,8 +41,6 @@
 		7BDA879A1EBB564C0048CD44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BDA879C1EBB564C0048CD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BDA87A31EBB567F0048CD44 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		7BDA87A61EBB57690048CD44 /* ARCarMovement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCarMovement.h; sourceTree = "<group>"; };
-		7BDA87A71EBB57690048CD44 /* ARCarMovement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCarMovement.m; sourceTree = "<group>"; };
 		7BE0A88C1EBC419400C08FA5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		7BE0A88E1EBC419E00C08FA5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7BE0A8901EBC41A900C08FA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,8 +142,8 @@
 		7BDA87A51EBB56E50048CD44 /* ARCarMovement */ = {
 			isa = PBXGroup;
 			children = (
-				7BDA87A61EBB57690048CD44 /* ARCarMovement.h */,
-				7BDA87A71EBB57690048CD44 /* ARCarMovement.m */,
+				7B4897371F9F3AB400227B1D /* ARCarMovement-Bridging-Header.h */,
+				7B4897361F9F3A8800227B1D /* ARCarMovement.swift */,
 			);
 			path = ARCarMovement;
 			sourceTree = "<group>";
@@ -180,6 +179,7 @@
 				TargetAttributes = {
 					7BDA87871EBB564C0048CD44 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -223,7 +223,6 @@
 			files = (
 				7BDA87931EBB564C0048CD44 /* ViewController.m in Sources */,
 				7BDA87901EBB564C0048CD44 /* AppDelegate.m in Sources */,
-				7BDA87A81EBB57690048CD44 /* ARCarMovement.m in Sources */,
 				7BDA878D1EBB564C0048CD44 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ARCarMovement/Info.plist;
@@ -361,6 +361,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonyraphel.ARCarMovement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARCarMovement/ARCarMovement/ARCarMovement-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -368,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ARCarMovement/Info.plist;
@@ -375,6 +379,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonyraphel.ARCarMovement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARCarMovement/ARCarMovement/ARCarMovement-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
