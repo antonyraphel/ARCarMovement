@@ -13,7 +13,7 @@ For running this demo project, you need to add latest Google Maps SDK with Key. 
 
 ### Prerequisites
 
-To build a project using the ARCarMovement for iOS, you need version 7.3 or later of Xcode.
+To build a project using the ARCarMovement for iOS, you need version 8.0 or later of Xcode.
 
 #### Usage
 
@@ -23,14 +23,23 @@ Add your Google Maps API key to your AppDelegate.m as follows:
 [GMSServices provideAPIKey:@"YOUR_API_KEY"];
 ```
 
+For Objective-C Project:
+- Drag and drop the **ARCarMovement.swift** into your project.
+- A popup window will appear and ask "Would You like to configure an Objective-C bridging Header".
+- Choose Yes.
+- Click on your Xcode Project file (optional)
+- Click on Build Settings
+- Find the Search bar and search for **Defines Module**.
+- Change the value to **Yes**.
+- In App delegate or where you want to import, add the following : **#import "YourProjectName-Swift.h"**
+
 Add the following import statement to your ViewController.h as follows:
 
-
 ```
-#import "ARCarMovement.h"
+#import "ARCarMovement-Swift.h"
 ```
 
-Create a ARCarMovement property in ViewController.h:
+Create a ARCarMovement property in ViewController.m:
 
 ```
 @property (strong, nonatomic) ARCarMovement *moveMent;
@@ -41,13 +50,15 @@ self.moveMent = [[ARCarMovement alloc]init];
 self.moveMent.delegate = self;
 ```
 
-The required datasource method is
+The required public method is
 
 ```
 /**
 *  assign the specified details to be work with animation for the Marker.
 */
-- (void)ARCarMovement:(GMSMarker *)marker withOldCoordinate:(CLLocationCoordinate2D)oldCoordinate andNewCoordinate:(CLLocationCoordinate2D)newCoordinate inMapview:(GMSMapView *)mapView withBearing:(float)newBearing;
+public func ARCarMovement(marker: GMSMarker, oldCoordinate: CLLocationCoordinate2D, newCoordinate:CLLocationCoordinate2D, mapView: GMSMapView, bearing: Float) {
+  //code here
+}
 
 ```
 
@@ -57,8 +68,10 @@ The required delegate method is
 /**
 *  Tells the delegate that the specified marker will be work with animation.
 */
-- (void)ARCarMovement:(GMSMarker *)movedMarker;
+- (void)ARCarMovementMoved:(GMSMarker * _Nonnull)Marker;
 ```
+
+For Swift project, just drag and drop the **ARCarMovement.swift** into your project.  
 
 ## Author
 
