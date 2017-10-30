@@ -31,7 +31,7 @@ For Objective-C Project:
 - Click on Build Settings
 - Find the Search bar and search for **Defines Module**.
 - Change the value to **Yes**.
-- In App delegate or where you want to import, add the following : **#import "YourProjectName-Swift.h"**
+- In App delegate or where you want to import, add the following : **#import "ARCarMovement-Swift.h"**
 
 Add the following import statement to your ViewController.h as follows:
 
