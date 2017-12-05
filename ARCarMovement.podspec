@@ -19,7 +19,7 @@ s.platform     = :ios, "9.0"
 s.ios.deployment_target = '9.0'
 s.source       = { :git => "https://github.com/antonyraphel/ARCarMovement.git", :tag => "v#{s.version}" }
 s.source_files  = "ARCarMovement", "ARCarMovement/**/*.{h,m}"
-#s.static_framework = true
+s.static_framework = true
 
 #s.compiler_flags = '-ObjC', '$(inherited)'
 
