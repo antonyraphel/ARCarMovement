@@ -19,7 +19,7 @@ s.platform     = :ios, "9.0"
 s.ios.deployment_target = '9.0'
 s.source       = { :git => "https://github.com/antonyraphel/ARCarMovement.git", :tag => "v#{s.version}" }
 s.source_files  = "ARCarMovement", "ARCarMovement/**/*.{h,m}"
-s.static_framework = true
+#s.static_framework = true
 
 #s.compiler_flags = '-ObjC', '$(inherited)'
 
@@ -27,27 +27,20 @@ s.static_framework = true
 
 #s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 
-s.frameworks   = [
-'UIKit',
-'Foundation',
-"Accelerate",
-"AVFoundation",
-"CoreBluetooth",
-"CoreData",
-"CoreLocation",
-"CoreText",
-"GLKit",
-"ImageIO",
-"OpenGLES",
-"QuartzCore",
-"Security",
-"SystemConfiguration",
-"CoreGraphics",
-"GoogleMaps"
-]
-s.libraries    = 'c++', 'z', 'icucore'
-#s.dependency 'GoogleMaps', '~> 2.0'
+s.dependency 'GoogleMaps', '~> 2.0'
 s.requires_arc = true
+s.frameworks   = [
+        "Accelerate",
+        "CoreTelephony",
+        "CoreText",
+        "GLKit",
+        "ImageIO",
+        "OpenGLES",
+        "QuartzCore"
+      ]
+s.libraries    = 'c++', 'z'
+s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
+spec.vendored_frameworks = 'GoogleMaps.framework', 'GoogleMapsCore.framework'
 
 end
 
