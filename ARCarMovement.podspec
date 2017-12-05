@@ -43,10 +43,69 @@ s.frameworks   = [
       ]
 s.libraries    = 'c++', 'z'
 s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
+        
+        
+        
+s.subspecs = [
+    {
+      "frameworks": [
+        "CoreData",
+        "CoreGraphics",
+        "CoreLocation",
+        "QuartzCore",
+        "SystemConfiguration",
+        "UIKit"
+      ],
+      "libraries": [
+        "c++",
+        "z"
+      ],
+      "name": "Base",
+      "vendored_frameworks": [
+        "Base/Frameworks/GoogleMapsBase.framework"
+      ]
+    },
+    {
+      "dependencies": {
+        "GoogleMaps/Base": [
+
+        ]
+      },
+      "frameworks": [
+        "Accelerate",
+        "CoreTelephony",
+        "CoreText",
+        "GLKit",
+        "ImageIO",
+        "OpenGLES",
+        "QuartzCore"
+      ],
+      "name": "Maps",
+      "resources": [
+        "Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle"
+      ],
+      "vendored_frameworks": [
+        "Maps/Frameworks/GoogleMaps.framework",
+        "Maps/Frameworks/GoogleMapsCore.framework"
+      ]
+    },
+    {
+      "dependencies": {
+        "GoogleMaps/Maps": [
+
+        ]
+      },
+      "name": "M4B",
+      "vendored_frameworks": [
+        "M4B/Frameworks/GoogleMapsM4B.framework"
+      ]
+    }
+  ]
+        
 #s.vendored_frameworks = [
- #       "Maps/Frameworks/GoogleMaps.framework",
- #       "Maps/Frameworks/GoogleMapsCore.framework"
-  #    ]
+   #     "Maps/Frameworks/GoogleMaps.framework",
+     #   "Maps/Frameworks/GoogleMapsCore.framework"
+     # ]
 
 end
 
