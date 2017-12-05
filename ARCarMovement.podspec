@@ -19,7 +19,7 @@ s.platform     = :ios, "9.0"
 s.ios.deployment_target = '9.0'
 s.source       = { :git => "https://github.com/antonyraphel/ARCarMovement.git", :tag => "v#{s.version}" }
 #s.source_files  = 'ARCarMovement/ARCarMovement/**/*.{h,m}' 
-s.pushed_with_swift_version = s.version,
+#s.pushed_with_swift_version = s.version
 s.source_files  = 'ARCarMovement/ARCarMovement/**/*.{swift,h,m}'       
 s.static_framework = true
 
