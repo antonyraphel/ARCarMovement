@@ -2,8 +2,7 @@
 
 This is navigation example on google map. Here Marker move as vehicles moves with turns as uber does in their app. Using old and new coordinates animating bearing value the markers are moving.
 
-
-![ARCarMovement Screenshot](https://raw.githubusercontent.com/antonyraphel/ARCarMovement/30b4fa26fc4f14abaef5da147544db8d558b1c18/screenshot/image-1.png) <!-- .element height="50%" width="50%" -->
+<img src="https://raw.githubusercontent.com/antonyraphel/ARCarMovement/30b4fa26fc4f14abaef5da147544db8d558b1c18/screenshot/image-1.png" width = "60%" align="middle">
 
 ## Getting Started
 
