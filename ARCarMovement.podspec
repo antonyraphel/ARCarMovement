@@ -40,7 +40,10 @@ s.frameworks   = [
       ]
 s.libraries    = 'c++', 'z'
 s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
-s.vendored_frameworks = 'GoogleMaps.framework', 'GoogleMapsCore.framework'
+s.vendored_frameworks = [
+        "Maps/Frameworks/GoogleMaps.framework",
+        "Maps/Frameworks/GoogleMapsCore.framework"
+      ]
 
 end
 
