@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		363671A50CD8AE8C63A9E663 /* Pods_ARCarMovement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE2196FB7F26D597796831E /* Pods_ARCarMovement.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		7BDA878D1EBB564C0048CD44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDA878C1EBB564C0048CD44 /* main.m */; };
 		7BDA87901EBB564C0048CD44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDA878F1EBB564C0048CD44 /* AppDelegate.m */; };
 		7BDA87931EBB564C0048CD44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDA87921EBB564C0048CD44 /* ViewController.m */; };
@@ -25,7 +26,7 @@
 		7BE0A89F1EBC41F100C08FA5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A89E1EBC41F100C08FA5 /* OpenGLES.framework */; };
 		7BE0A8A11EBC41FB00C08FA5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE0A8A01EBC41FB00C08FA5 /* SystemConfiguration.framework */; };
 		7BE0A8A31EBC58C000C08FA5 /* coordinates.json in Resources */ = {isa = PBXBuildFile; fileRef = 7BE0A8A21EBC58C000C08FA5 /* coordinates.json */; };
-		CEEABD31D6AFB7B9302BBEED /* Pods_ARCarMovement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE2196FB7F26D597796831E /* Pods_ARCarMovement.framework */; };
+		DEEC0D34214A46DB0096B9A5 /* ARCarMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4897361F9F3A8800227B1D /* ARCarMovement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,7 +76,7 @@
 				7BE0A8911EBC41A900C08FA5 /* CoreGraphics.framework in Frameworks */,
 				7BE0A88F1EBC419E00C08FA5 /* CoreData.framework in Frameworks */,
 				7BE0A88D1EBC419400C08FA5 /* Accelerate.framework in Frameworks */,
-				CEEABD31D6AFB7B9302BBEED /* Pods_ARCarMovement.framework in Frameworks */,
+				363671A50CD8AE8C63A9E663 /* Pods_ARCarMovement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +194,7 @@
 		7BDA87801EBB564C0048CD44 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Antony Raphel";
 				TargetAttributes = {
 					7BDA87871EBB564C0048CD44 = {
@@ -296,6 +297,7 @@
 			files = (
 				7BDA87931EBB564C0048CD44 /* ViewController.m in Sources */,
 				7BDA87901EBB564C0048CD44 /* AppDelegate.m in Sources */,
+				DEEC0D34214A46DB0096B9A5 /* ARCarMovement.swift in Sources */,
 				7BDA878D1EBB564C0048CD44 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +337,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -342,6 +345,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -368,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -388,6 +392,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -395,6 +400,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -415,9 +421,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -426,12 +433,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5680AFD25D6849914F2AE547 /* Pods-ARCarMovement.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ARCarMovement/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonyraphel.ARCarMovement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,12 +454,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 85BE9E362D18E261502D6674 /* Pods-ARCarMovement.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ARCarMovement/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonyraphel.ARCarMovement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
