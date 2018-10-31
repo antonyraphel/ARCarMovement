@@ -176,7 +176,6 @@
 				7BDA87841EBB564C0048CD44 /* Sources */,
 				7BDA87851EBB564C0048CD44 /* Frameworks */,
 				7BDA87861EBB564C0048CD44 /* Resources */,
-				8AACD6AEA3329A975EA00F85 /* [CP] Embed Pods Frameworks */,
 				64C1D5F16EA2ED2AA1CC90B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -271,21 +270,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARCarMovement/Pods-ARCarMovement-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8AACD6AEA3329A975EA00F85 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARCarMovement/Pods-ARCarMovement-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
