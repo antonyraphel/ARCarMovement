@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'ARCarMovement'
-s.version      = '2.0.1'
+s.version      = '2.0.2'
 s.summary      = 'Here Marker move as vehicles moves with turns as Uber/Ola does in their app.'
 
 s.description  = <<-DESC
