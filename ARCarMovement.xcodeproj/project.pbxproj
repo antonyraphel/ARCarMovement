@@ -176,7 +176,6 @@
 				7BDA87841EBB564C0048CD44 /* Sources */,
 				7BDA87851EBB564C0048CD44 /* Frameworks */,
 				7BDA87861EBB564C0048CD44 /* Resources */,
-				8AACD6AEA3329A975EA00F85 /* [CP] Embed Pods Frameworks */,
 				64C1D5F16EA2ED2AA1CC90B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -199,7 +198,7 @@
 				TargetAttributes = {
 					7BDA87871EBB564C0048CD44 = {
 						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = "";
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -271,21 +270,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARCarMovement/Pods-ARCarMovement-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8AACD6AEA3329A975EA00F85 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARCarMovement/Pods-ARCarMovement-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -446,7 +430,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ARCarMovement/ARCarMovement/ARCarMovement-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -466,7 +451,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.antonyraphel.ARCarMovement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ARCarMovement/ARCarMovement/ARCarMovement-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
