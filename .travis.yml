@@ -1,3 +1,4 @@
 language: objective-c
-xcode_project: ARCarMovement.xcodeproj
-xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+osx_image: xcode10.1
+script:
+  - xcodebuild -scheme ARCarMovement -workspace ARCarMovement.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=10.1' build test
