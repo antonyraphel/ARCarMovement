@@ -1,14 +1,27 @@
 # ARCarMovement
 
+[![CI Status](https://img.shields.io/travis/antonyraphel/ARCarMovement.svg?style=flat)](https://travis-ci.org/antonyraphel/ARCarMovement)
+[![Version](https://img.shields.io/cocoapods/v/ARCarMovement.svg?style=flat)](https://cocoapods.org/pods/ARCarMovement)
+[![License](https://img.shields.io/cocoapods/l/ARCarMovement.svg?style=flat)](https://cocoapods.org/pods/ARCarMovement)
+[![Platform](https://img.shields.io/cocoapods/p/ARCarMovement.svg?style=flat)](https://cocoapods.org/pods/ARCarMovement)
+
 This is navigation example on google map. Here Marker move as vehicles moves with turns as uber does in their app. Using old and new coordinates animating bearing value the markers are moving.
 
 <img src="https://raw.githubusercontent.com/antonyraphel/ARCarMovement/30b4fa26fc4f14abaef5da147544db8d558b1c18/screenshot/image-1.png" width = "60%" align="middle">
 
+
 ## Getting Started
 
-For running this demo project, you need to add latest Google Maps SDK with Key. You can download the Google Maps SDK and just drag and drop into this project.
+To run the project, clone the repo, and run `pod install`  from the ARCarMovement directory first.
 
-* [Google Maps APIs](https://developers.google.com/maps/documentation/ios-sdk/start) - Get the Google Maps iOS SDK
+## Installation
+
+ARCarMovement is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'ARCarMovement'
+```
 
 ### Prerequisites
 
@@ -30,12 +43,12 @@ For Objective-C Project:
 - Click on Build Settings
 - Find the Search bar and search for **Defines Module**.
 - Change the value to **Yes**.
-- In App delegate or where you want to import, add the following : **#import "ARCarMovement-Swift.h"**
+- In App delegate or where you want to import, add the following : **#import "ARCarMovement-Swift.h"**  **NOTE:** #import "< Defined Module Name >-Swift.h"
 
 Add the following import statement to your ViewController.h as follows:
 
 ```
-#import "ARCarMovement-Swift.h"
+#import "ARCarMovement-Swift.h" // NOTE: #import "<Your Defined Module Name>-Swift.h"
 ```
 
 Create a ARCarMovement property in ViewController.m:
@@ -84,27 +97,7 @@ Share feedbacks and ideas to improve this project, I would love to hear them out
 
 ## License
 
-MIT License
-
-Copyright (c) 2017 Antony Raphel
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+ARCarMovement is available under the MIT license. See the LICENSE file for more info.
 
 
 
