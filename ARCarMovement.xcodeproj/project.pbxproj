@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		343FA894218ACB52005C7001 /* ARCarMovementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343FA893218ACB52005C7001 /* ARCarMovementTests.swift */; };
 		363671A50CD8AE8C63A9E663 /* Pods_ARCarMovement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE2196FB7F26D597796831E /* Pods_ARCarMovement.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		7BDA878D1EBB564C0048CD44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDA878C1EBB564C0048CD44 /* main.m */; };
 		7BDA87901EBB564C0048CD44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDA878F1EBB564C0048CD44 /* AppDelegate.m */; };
@@ -29,8 +30,21 @@
 		DEEC0D34214A46DB0096B9A5 /* ARCarMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4897361F9F3A8800227B1D /* ARCarMovement.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		343FA896218ACB52005C7001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BDA87801EBB564C0048CD44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BDA87871EBB564C0048CD44;
+			remoteInfo = ARCarMovement;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2DE2196FB7F26D597796831E /* Pods_ARCarMovement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARCarMovement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		343FA891218ACB51005C7001 /* ARCarMovementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCarMovementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		343FA893218ACB52005C7001 /* ARCarMovementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCarMovementTests.swift; sourceTree = "<group>"; };
+		343FA895218ACB52005C7001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5680AFD25D6849914F2AE547 /* Pods-ARCarMovement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCarMovement.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARCarMovement/Pods-ARCarMovement.debug.xcconfig"; sourceTree = "<group>"; };
 		7B4897361F9F3A8800227B1D /* ARCarMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCarMovement.swift; sourceTree = "<group>"; };
 		7B4897371F9F3AB400227B1D /* ARCarMovement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARCarMovement-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -61,6 +75,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		343FA88E218ACB51005C7001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BDA87851EBB564C0048CD44 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		343FA892218ACB52005C7001 /* ARCarMovementTests */ = {
+			isa = PBXGroup;
+			children = (
+				343FA893218ACB52005C7001 /* ARCarMovementTests.swift */,
+				343FA895218ACB52005C7001 /* Info.plist */,
+			);
+			path = ARCarMovementTests;
+			sourceTree = "<group>";
+		};
 		58916E6D34FCA0A8B9C4E6FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				7BDA878A1EBB564C0048CD44 /* ARCarMovement */,
+				343FA892218ACB52005C7001 /* ARCarMovementTests */,
 				7BDA87891EBB564C0048CD44 /* Products */,
 				7BDA87A21EBB567E0048CD44 /* Frameworks */,
 				58916E6D34FCA0A8B9C4E6FA /* Pods */,
@@ -106,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				7BDA87881EBB564C0048CD44 /* ARCarMovement.app */,
+				343FA891218ACB51005C7001 /* ARCarMovementTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +200,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		343FA890218ACB51005C7001 /* ARCarMovementTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 343FA89A218ACB52005C7001 /* Build configuration list for PBXNativeTarget "ARCarMovementTests" */;
+			buildPhases = (
+				343FA88D218ACB51005C7001 /* Sources */,
+				343FA88E218ACB51005C7001 /* Frameworks */,
+				343FA88F218ACB51005C7001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				343FA897218ACB52005C7001 /* PBXTargetDependency */,
+			);
+			name = ARCarMovementTests;
+			productName = ARCarMovementTests;
+			productReference = 343FA891218ACB51005C7001 /* ARCarMovementTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7BDA87871EBB564C0048CD44 /* ARCarMovement */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BDA879F1EBB564C0048CD44 /* Build configuration list for PBXNativeTarget "ARCarMovement" */;
@@ -193,9 +243,15 @@
 		7BDA87801EBB564C0048CD44 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Antony Raphel";
 				TargetAttributes = {
+					343FA890218ACB51005C7001 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7BDA87871EBB564C0048CD44;
+					};
 					7BDA87871EBB564C0048CD44 = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0900;
@@ -217,11 +273,19 @@
 			projectRoot = "";
 			targets = (
 				7BDA87871EBB564C0048CD44 /* ARCarMovement */,
+				343FA890218ACB51005C7001 /* ARCarMovementTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		343FA88F218ACB51005C7001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BDA87861EBB564C0048CD44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +339,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		343FA88D218ACB51005C7001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343FA894218ACB52005C7001 /* ARCarMovementTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BDA87841EBB564C0048CD44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,6 +359,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		343FA897218ACB52005C7001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BDA87871EBB564C0048CD44 /* ARCarMovement */;
+			targetProxy = 343FA896218ACB52005C7001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7BDA87941EBB564C0048CD44 /* Main.storyboard */ = {
@@ -308,6 +388,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		343FA898218ACB52005C7001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ARCarMovementTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = antonyraphel.ARCarMovementTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARCarMovement.app/ARCarMovement";
+			};
+			name = Debug;
+		};
+		343FA899218ACB52005C7001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ARCarMovementTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = antonyraphel.ARCarMovementTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARCarMovement.app/ARCarMovement";
+			};
+			name = Release;
+		};
 		7BDA879D1EBB564C0048CD44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -457,6 +587,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		343FA89A218ACB52005C7001 /* Build configuration list for PBXNativeTarget "ARCarMovementTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				343FA898218ACB52005C7001 /* Debug */,
+				343FA899218ACB52005C7001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7BDA87831EBB564C0048CD44 /* Build configuration list for PBXProject "ARCarMovement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
