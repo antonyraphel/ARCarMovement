@@ -1,0 +1,3 @@
+language: objective-c
+xcode_project: ARCarMovement.xcodeproj
+xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
