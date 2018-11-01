@@ -1,14 +1,27 @@
 # ARCarMovement
 
+[![CI Status](https://img.shields.io/travis/Antony Raphel/ARCarMovement.svg?style=flat)](https://travis-ci.org/Antony Raphel/ARCarMovement)
+[![Version](https://img.shields.io/cocoapods/v/ARCarMovement.svg?style=flat)](https://cocoapods.org/pods/ARCarMovement)
+[![License](https://img.shields.io/cocoapods/l/ARCarMovement.svg?style=flat)](https://cocoapods.org/pods/ARCarMovement)
+[![Platform](https://img.shields.io/cocoapods/p/ARCarMovement.svg?style=flat)](https://cocoapods.org/pods/ARCarMovement)
+
 This is navigation example on google map. Here Marker move as vehicles moves with turns as uber does in their app. Using old and new coordinates animating bearing value the markers are moving.
 
 <img src="https://raw.githubusercontent.com/antonyraphel/ARCarMovement/30b4fa26fc4f14abaef5da147544db8d558b1c18/screenshot/image-1.png" width = "60%" align="middle">
 
+
 ## Getting Started
 
-For running this demo project, you need to add latest Google Maps SDK with Key. You can download the Google Maps SDK and just drag and drop into this project.
+To run the project, clone the repo, and run `pod install`  from the ARCarMovement directory first.
 
-* [Google Maps APIs](https://developers.google.com/maps/documentation/ios-sdk/start) - Get the Google Maps iOS SDK
+## Installation
+
+ARCarMovement is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'ARCarMovement'
+```
 
 ### Prerequisites
 

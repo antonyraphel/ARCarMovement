@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'ARCarMovement'
-s.version      = '2.0.0'
+s.version      = '2.0.1'
 s.summary      = 'Here Marker move as vehicles moves with turns as Uber/Ola does in their app.'
 
 s.description  = <<-DESC
@@ -19,10 +19,10 @@ s.platform     = :ios, '9.0'
 s.ios.deployment_target = '9.0'
 s.swift_version = '3.2'
 
-s.source       = { :git => "https://github.com/antonyraphel/ARCarMovement.git", :tag => "v#{s.version}" }
+s.source       = { :git => 'https://github.com/antonyraphel/ARCarMovement.git', :tag => s.version.to_s }
 #s.source_files  = 'ARCarMovement/ARCarMovement/**/*.{h,m}' 
 #s.pushed_with_swift_version = s.version
-s.source_files  = 'ARCarMovement/ARCarMovement/**/*.{swift,h,m}'       
+s.source_files  = 'ARCarMovement/ARCarMovement/**/*'       
 s.static_framework = true
 
 #s.compiler_flags = '-ObjC', '$(inherited)'
