@@ -17,7 +17,7 @@ s.author    = { 'Antony Raphel' => 'antonypr717@gmail.com' }
 s.social_media_url   = 'https://twitter.com/antonypr717'
 s.platform     = :ios, '9.0'
 s.ios.deployment_target = '9.0'
-s.swift_version = '3.2'
+s.swift_version = '4.2'
 
 s.source       = { :git => 'https://github.com/antonyraphel/ARCarMovement.git', :tag => s.version.to_s }
 #s.source_files  = 'ARCarMovement/ARCarMovement/**/*.{h,m}' 
