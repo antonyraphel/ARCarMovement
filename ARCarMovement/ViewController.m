@@ -80,7 +80,7 @@
          *  to turn properly. Here coordinates json files is used without new bearing value. So that
          *  bearing won't work as expected.
          */
-        [self.moveMent ARCarMovementWithMarker:driverMarker oldCoordinate:self.oldCoordinate newCoordinate:newCoordinate mapView:self.mapView bearing:0];  //instead value 0, pass latest bearing value from backend
+        [self.moveMent arCarMovementWithMarker:driverMarker oldCoordinate:self.oldCoordinate newCoordinate:newCoordinate mapView:self.mapView bearing:0];  //instead value 0, pass latest bearing value from backend
         
         self.oldCoordinate = newCoordinate;
         self.counter = self.counter + 1; //increase the value to get all index position from array
@@ -92,7 +92,7 @@
 }
 
 #pragma mark - ARCarMovementDelegate
-- (void)ARCarMovementMoved:(GMSMarker * _Nonnull)Marker {
+- (void)arCarMovementMoved:(GMSMarker * _Nonnull)Marker {
     driverMarker = Marker;
     driverMarker.map = self.mapView;
     
