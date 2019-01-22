@@ -1,8 +1,20 @@
+
+# 1
 language: objective-c
-osx_image: xcode10.1
-xcode_workspace: ARCarMovement.xcworkspace
-xcode_scheme: ARCarMovement
-xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
+
+# 2
 before_install:
 - cd ARCarMovement
 - pod install
+
+# 3
+script: xcodebuild -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xcodebuild test -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+
+# 4
+script: xctool test -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+
+# 5
+script: 
+  - xcodebuild build-for-testing -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool run-tests -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
