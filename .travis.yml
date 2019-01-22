@@ -15,6 +15,6 @@ script: xcodebuild test -workspace ARCarMovement.xcworkspace -scheme ARCarMoveme
 script: xctool test -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 # 5
-script: 
-  - xcodebuild build-for-testing -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xctool run-tests -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+# script: 
+#   - xcodebuild build-for-testing -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+#   - xctool run-tests -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
