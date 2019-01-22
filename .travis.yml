@@ -6,15 +6,15 @@ language: objective-c
 before_install:
 - cd ARCarMovement
 - pod install
-- brew update
-- brew upgrade xctool
+# - brew update
+# - brew upgrade xctool
 
 # 3
 script: xcodebuild clean && xcodebuild build -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-script: xcodebuild test -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+# script: xcodebuild test -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 # 4
-script: xctool test -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+# script: xctool test -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 # 5
 # script: 
