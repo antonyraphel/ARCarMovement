@@ -4,5 +4,5 @@ xcode_workspace: ARCarMovement.xcworkspace
 xcode_scheme: ARCarMovement
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
 before_install:
-- cd ExampleProject
+- cd ARCarMovement
 - pod install
