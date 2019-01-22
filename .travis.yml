@@ -7,7 +7,7 @@ before_install:
 - cd ARCarMovement
 - pod install
 - brew update
-- brew install xctool
+- brew upgrade xctool
 
 # 3
 script: xcodebuild clean && xcodebuild build -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
