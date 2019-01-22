@@ -3,24 +3,18 @@
 language: objective-c
 
 # 2
-env:
-  - LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8
-
-# 3
 before_install:
 - cd ARCarMovement
 - pod install
 
-# 4
-script: 
-  - set -o pipefail
-  - xcodebuild -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-script: xcodebuild test -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+# 3
+script: xcodebuild clean && xcodebuild build -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xcodebuild clean && xcodebuild test -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
-# 5
+# 4
 script: xctool test -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
-# 6
+# 5
 script: 
-  - xcodebuild build-for-testing -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xcodebuild clean && xcodebuild-for-testing -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
   - xctool run-tests -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
