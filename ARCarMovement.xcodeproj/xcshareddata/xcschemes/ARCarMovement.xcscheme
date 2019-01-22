@@ -20,6 +20,20 @@
                ReferencedContainer = "container:ARCarMovement.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "357A48815DE3ED9B58D072F8C6C6C99B"
+               BuildableName = "Pods_ARCarMovement.framework"
+               BlueprintName = "Pods-ARCarMovement"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

@@ -2,6 +2,10 @@
 # 1
 language: objective-c
 
+branches:
+  only:
+    - development
+    
 # 2
 before_install:
 - cd ARCarMovement
