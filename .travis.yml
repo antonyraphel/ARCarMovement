@@ -1,4 +1,8 @@
 language: objective-c
 osx_image: xcode10.1
-script:
-  - xcodebuild -scheme ARCarMovement -workspace ARCarMovement.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=11.4' build test
+xcode_workspace: ARCarMovement.xcworkspace
+xcode_scheme: ARCarMovement
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
+before_install:
+- cd ExampleProject
+- pod install
