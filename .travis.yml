@@ -1,26 +1,27 @@
 
 # 1
 language: objective-c
-
+xcode_project: ARCarMovement.xcodeproj 
+xcode_scheme: ARCarMovementTests
+osx_image: xcode10.2
 branches:
   only:
     - development
     
 # 2
 before_install:
-- cd ARCarMovement
 - pod install
-# - brew update
-# - brew upgrade xctool
+- brew update
+- brew upgrade xctool
 
 # 3
 script: xcodebuild clean && xcodebuild build -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-# script: xcodebuild test -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xcodebuild test -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 # 4
-# script: xctool test -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xctool test -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 # 5
-# script: 
-#   - xcodebuild build-for-testing -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-#   - xctool run-tests -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: 
+  - xcodebuild build-for-testing -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool run-tests -workspace ARCarMovement.xcworkspace -scheme ARCarMovementTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
