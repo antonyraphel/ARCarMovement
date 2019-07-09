@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'ARCarMovement'
-s.version      = '2.0.2'
+s.version      = '2.1.0'
 s.summary      = 'Here Marker move as vehicles moves with turns as Uber/Ola does in their app.'
 
 s.description  = <<-DESC
@@ -17,7 +17,7 @@ s.author    = { 'Antony Raphel' => 'antonypr717@gmail.com' }
 s.social_media_url   = 'https://twitter.com/antonypr717'
 s.platform     = :ios, '9.0'
 s.ios.deployment_target = '9.0'
-s.swift_version = '4.2'
+s.swift_version = '5.0'
 
 s.source       = { :git => 'https://github.com/antonyraphel/ARCarMovement.git', :tag => s.version.to_s }
 #s.source_files  = 'ARCarMovement/ARCarMovement/**/*.{h,m}' 
