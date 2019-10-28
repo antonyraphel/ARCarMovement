@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "357A48815DE3ED9B58D072F8C6C6C99B"
+               BlueprintIdentifier = "79743E6F67839A5B512FBDE639C36DD4"
                BuildableName = "Pods_ARCarMovement.framework"
                BlueprintName = "Pods-ARCarMovement"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">

@@ -3,16 +3,18 @@
 language: objective-c
 xcode_project: ARCarMovement.xcodeproj 
 xcode_scheme: ARCarMovementTests
-osx_image: xcode10.2
+osx_image: xcode10.3
 branches:
   only:
     - development
     
 # 2
 before_install:
+- gem install cocoapods-acknowledgements
+- gem install cocoapods
 - pod install
 - brew update
-- brew upgrade xctool
+- if brew outdated --quiet | grep -qx xctool; then brew upgrade xctool; fi
 
 # 3
 script: xcodebuild clean && xcodebuild build -workspace ARCarMovement.xcworkspace -scheme ARCarMovement -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO

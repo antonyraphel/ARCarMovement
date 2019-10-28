@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'ARCarMovement'
-s.version      = '2.1.0'
+s.version      = '2.1.1'
 s.summary      = 'Here Marker move as vehicles moves with turns as Uber/Ola does in their app.'
 
 s.description  = <<-DESC
@@ -32,7 +32,7 @@ s.static_framework = true
 #s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 
 #s.public_header_files = 'ARCarMovement/ARCarMovement/**/*.h'
-s.dependency 'GoogleMaps', '~> 2.0'
+s.dependency 'GoogleMaps', '~> 3.5.0'
 s.requires_arc = true
 #s.frameworks   = [
 #        "Accelerate",
